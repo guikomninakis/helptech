@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="telaLogin.css">
+    
+    <title>Login Dark/Light Mode</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>Help Tech</h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="index.html #somos" class="nav-link">Quem Somos</a></li>
+                    <li class="nav-item"><a href="index.html #Serviços" class="nav-link"> Serviços</a></li>
+                    <li class="nav-item"><a href="index.html #Cliente" class="nav-link">Clientes</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+    
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="index.html #somos" class="nav-link">Quem Somos</a></li>
+                <li class="nav-item"><a href="index.html #Serviços" class="nav-link"> Serviços</a></li>
+                <li class="nav-item"><a href="index.html #Cliente" class="nav-link">Clientes</a></li>
+            </ul>
+    
+            <div class="login-button">
+                <button><a href="telaLogin.html">Entrar</a></button>
+            </div>
+        </div>
+    </header>
+    <main id="container">
+        <form id="login_form">
+            <!-- FORM HEADER -->
+            <div id="form_header">
+                <h1>Login</h1>
+                <i id="mode_icon" class="fa-solid fa-moon"></i>
+            </div>
+
+            <!-- SOCIAL MEDIA LINKS -->
+            <div id="social_media">
+                <!-- FACEBOOK -->
+                <a href="#">
+                    <img src="img/facebook.png" alt="Logo Fecebook">
+                </a>
+
+                <!-- GOOGLE -->
+                <a href="#">
+                    <img src="img/google.png" alt="Google logo">
+                </a>
+                
+                <!-- GITHUB -->
+                <a href="#">
+                    <img src="img/github.png" alt="">
+                </a>
+            </div>
+
+            <!-- INPUTS -->
+            <div id="inputs">
+                
+                <!-- EMAIL -->
+                <div class="input-box">
+                    <label for="email">
+                        E-mail
+                        <div class="input-field">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" id="email" name="email">
+                        </div>
+                    </label>
+                </div>
+                
+                <!-- PASSWORD -->
+                <div class="input-box">
+                    <label for="password">
+                        Senha
+                        <div class="input-field">
+                            <i class="fa-solid fa-key"></i>
+                            <input type="password" id="password" name="password">
+                        </div>
+                    </label>
+                    
+                    <!-- FORGOT PASSWORD -->
+                    <div id="forgot_password">
+                        <a href="telaCadastro.html">
+                            Cadastre-se Agora
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LOGIN BUTTON -->
+            <button type="submit" id="login_button">
+                Login
+            </button>
+        </form>
+    </main>
+
+    <!-- JAVASCRIPT -->
+    <script type="text/javascript" src="telaLogin.js"></script>
+</body>
+</html>
