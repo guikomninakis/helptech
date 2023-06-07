@@ -63,6 +63,12 @@ header {
     background-color: #0187a7;
 }
 
+.vidro div{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
 .login-button button a {
     text-decoration: none;
     color: #fff;
@@ -77,6 +83,47 @@ header {
 .mobile-menu {
     display: none;
 }
+
+/* Inicio codigos colunas */
+#columns, img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ladolado{
+    height: 350px;
+    margin: 15px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(179,72,255,1);
+    border-radius: 20px;
+}
+
+.imgladolado{
+    width: 80%;
+    border-radius: 15px;
+    margin: 10px 0px 10px 25px;
+
+}
+
+.text-p{
+    font-size: 16px;
+    padding: 20px;
+    font-weight: bold; 
+}
+
+@media (max-width: 414px){
+    #columns, img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+}
+/* termina codigo colunas  */
+
 
 @media screen and (max-width: 999px) {
     .nav-bar {
@@ -309,7 +356,7 @@ section{
 }
 .img1{
     list-style: none;
-    display: flex;
+    display: inline-block;
     justify-content: space-around;
     margin-top: 30px;
     backdrop-filter: opacity(20%);
@@ -317,11 +364,7 @@ section{
 .id1{
     border-radius: 30px;
 }
-.text-p{
-    padding: 20px;
-    font-weight: bold;  
 
-}
 .vidro{
     background: rgb(154,149,241);
     background:  rgba(179,72,255,1);
@@ -476,9 +519,9 @@ section{
         justify-content: space-around;
         margin: 10px;
     }
-}
-.vidro:hover{
-    outline: auto;
+    .vidro:hover{
+        outline: auto;
+    }
 }
 
 
@@ -986,10 +1029,6 @@ footer {
 
 @media screen and (max-width: 768px) {
 
-    .nav-bar {
-        paddi;
-    }
-
     #footer_content {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
@@ -1019,7 +1058,7 @@ footer {
    #teste{
     display: flex;
     text-align: center;
-    justify-content: center>;
+    justify-content: center;
    }
 
    #subtesto{
@@ -1044,7 +1083,8 @@ footer {
     align-items: center;
     text-align: center;
    }
-}
+
+
 
 @media screen and (max-width: 426px) {
     #footer_content {
@@ -1052,9 +1092,3 @@ footer {
         padding: 3rem 2rem;
     }
 }
-
-
-
-
-
-
